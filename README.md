@@ -26,42 +26,6 @@ C# 8 approch (Null coalescing assignment operator):
 
 ## Non-Null Reference Types
 
-I found that, there is nothing new with this feature. It gives you warning when attempt to checkout any nullable property. Also gives you  warning when you try to assign null to a non nullable variables.
-Using this new C# 8 feature, you can reduce the null reference exception.
-
-Currently, this feature is not enable as default. You can enable the feature itselft in two procedure.
-
-Firstly, enable nullable feature for entire project. You should add ```<Nullable>enable</Nullable>``` inside your .csproj file. You also can enable nullable feature for a specific file. I like the way the provide two options. In large or any enterprise software it will not be a single day job to fix all possible null expection. So, you can improve your application day by day, though enabling non null reference type feature on a single file.
-
-You need to add ```#nullable enable``` on the very top of your code snippet and ```#nullable restore``` at the very bottom of your code snippet.
-# C-Sharp-8-NewFeatures
-Example of new features introduced in C# 8.
-
-
-## Null Coalescing Assignments
-
-Null coalescing assignment introduced in C# 8. The motive of this operator is, check out that the variable is null or not, assign a value if it is null.
-In C# 6.0, they introduced null coalescing operator ```??```. Null coalescing operator and null coalescing assignments operator seem similar and they are similar in motive too. Null coalescing operator check the variable is null or not and the null coalescing assignment operator assigns a value if it is null.
-Previously it could be done like below:
-
-```
-if(anyVariable == null)
-{
-  anyVariable = "Default value";
-} 
-```
-
-A better approch with null coalescing operator:
-
-``` anyVariable = anyVariable ?? "Default Value"; ```
-
-C# 8 approch (Null coalescing assignment operator):
-
-``` anyVariable ??= "Default Value";```
-
-
-## Non-Null Reference Types
-
 I found that there is nothing new with this feature. It gives you a warning when an attempt to check out any nullable property. It also gives you warning when you try to assign null to a non-nullable variable.
 Using this new C# 8 feature, you can reduce the null reference exception.
 
