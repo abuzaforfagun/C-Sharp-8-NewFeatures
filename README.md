@@ -74,6 +74,8 @@ You need to add ```#nullable enable``` on the very top of your code snippet and 
 You need to add ```#nullable enable``` on the very top of your code snippet and ```#nullable restore``` at the very bottom of your code snippet.
 Take a look over the below code snippets.
 ![Code snippet without non-null reference types feature](https://user-images.githubusercontent.com/24603959/66712454-a20f6d80-edbe-11e9-8016-df020d080db6.png)
+
 See, you got no warning and you will get the null reference when trying to run the application.
 ![Code snippet with non-null reference types feature](https://user-images.githubusercontent.com/24603959/66712408-fd8d2b80-edbd-11e9-9de5-4af4eab74eb6.png)
+
 After enabling the feature, you got a warning on compile time. So you have a chance to fix the possibilities of null reference exception.
