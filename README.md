@@ -52,4 +52,5 @@ For the very first, I missed the concept itself. I disappointed while I found it
 It prevents you from accidentally changing the internal state in places where that was not expected. 
 
 ![Readonly members](https://user-images.githubusercontent.com/24603959/66712807-42b45c00-edc4-11e9-912c-117ecdcc3802.png)
+
 Take a look over the image, you will get an error when trying to modify other variables from a readonly member.
