@@ -43,3 +43,13 @@ See, you got no warning and you will get the null reference when trying to run t
 ![Code snippet with non-null reference types feature](https://user-images.githubusercontent.com/24603959/66712408-fd8d2b80-edbd-11e9-9de5-4af4eab74eb6.png)
 
 After enabling the feature, you got a warning on compile time. So you have a chance to fix the possibilities of null reference exception.
+
+
+## Readonly Members
+
+For the very first, I missed the concept itself. I disappointed while I found it is only for the struct. You can think of a readonly method as a pure function. You can not modify any other properties from the readonly property setter.
+
+It prevents you from accidentally changing the internal state in places where that was not expected. 
+
+![Readonly members](https://user-images.githubusercontent.com/24603959/66712807-42b45c00-edc4-11e9-912c-117ecdcc3802.png)
+Take a look over the image, you will get an error when trying to modify other variables from a readonly member.
